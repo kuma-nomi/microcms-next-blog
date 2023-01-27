@@ -1,0 +1,13 @@
+.works-list {
+  .list-item {
+    .thumbnail {
+      @apply w-96 overflow-hidden relative;
+
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 66.67%;
+      }
+    }
+  }
+}

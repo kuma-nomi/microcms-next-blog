@@ -1,0 +1,11 @@
+.top-visual {
+  @apply text-center text-4xl py-40 relative mb-44;
+  background: var(--tertiary-color);
+}
+
+.profile-icon {
+  @apply shadow-xl absolute left-0 right-0 m-auto rounded-full overflow-hidden bg-slate-100;
+  bottom: -100px;
+  width: 200px;
+  height: 200px;
+}

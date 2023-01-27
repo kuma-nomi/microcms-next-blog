@@ -4,3 +4,9 @@ export type CommonListResponse<T> = {
   limit: number
   contents: T
 }
+
+export type Image = {
+  url: string
+  height: number
+  width: number
+}
