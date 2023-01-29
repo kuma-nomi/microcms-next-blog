@@ -1,0 +1,26 @@
+.header {
+  @apply absolute top-0 w-full;
+  z-index: 999;
+
+  .nav {
+    @apply max-w-5xl m-auto px-6 pt-4 flex tracking-wider justify-end;
+    gap: 32px;
+
+    a {
+      @apply relative inline-block;
+
+      &::after {
+        @apply absolute bottom-0 left-0;
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: #ffd803;
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
