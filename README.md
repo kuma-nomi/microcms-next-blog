@@ -1,5 +1,8 @@
 # kumanomi's portfolio
 
+URL:
+https://microcms-next-blog-sage.vercel.app/
+
 ## 技術構成
 
 - Next.js（13.1.5）
@@ -9,6 +12,7 @@
 - Tailwind CSS
 - ESLint
 - Prettier
+- Vercel
 
 ## 開発方法
 
