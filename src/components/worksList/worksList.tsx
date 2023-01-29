@@ -12,7 +12,7 @@ export const WorksList: React.FC<Props> = ({ works }) => {
     <ul className={styles['works-list']}>
       {works?.map((work) => (
         <li key={work.id} className={styles['list-item']}>
-          <Link href={`/work/${work.id}`}>
+          <Link href={`/works/${work.id}`}>
             <div className={styles['thumbnail']}>
               <Image
                 src={work.thumbnail.url}

@@ -25,7 +25,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <main>
       <MainVisual iconSrc={profile.image.url} />
-      <div className='max-w-5xl m-auto'>
+      <div className='max-w-5xl m-auto px-6'>
         <section className='text-center mb-24'>
           <h2 className='text-4xl mb-9'>profile</h2>
           <p className='text-base leading-8'>{profile?.detail}</p>

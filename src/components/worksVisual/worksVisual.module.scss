@@ -1,0 +1,19 @@
+.works-visual {
+  @apply px-6 py-16 mb-10;
+  background: var(--secondary-color);
+}
+
+.thumbnail {
+  @apply shadow-xl mx-auto bg-slate-100;
+  max-width: 847px;
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+  }
+}
+
+.title {
+  @apply text-center mt-12 text-3xl tracking-widest;
+}
