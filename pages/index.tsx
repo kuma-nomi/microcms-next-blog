@@ -1,7 +1,7 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
 
-import { MainVisual } from '@/components/mainVisual/mainVisual'
-import { WorksList } from '@/components/worksList/worksList'
+import { MainVisual } from '@/components/top/mainVisual/mainVisual'
+import { WorksList } from '@/components/top/worksList/worksList'
 import { client } from '@/libs/client'
 import type { Profile } from '@/types/profile'
 import type { WorksList as WorkListType } from '@/types/works'

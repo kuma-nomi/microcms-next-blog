@@ -4,7 +4,7 @@ import type {
   GetStaticPropsContext,
 } from 'next'
 
-import { WorksVisual } from '@/components/worksVisual/worksVisual'
+import { WorksVisual } from '@/components/works/worksVisual/worksVisual'
 import { client } from '@/libs/client'
 import type { Work, WorksList } from '@/types/works'
 
