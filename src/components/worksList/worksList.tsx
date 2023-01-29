@@ -14,9 +14,14 @@ export const WorksList: React.FC<Props> = ({ works }) => {
         <li key={work.id} className={styles['list-item']}>
           <Link href={`/work/${work.id}`}>
             <div className={styles['thumbnail']}>
-              <Image src={work.thumbnail.url} alt={work.title} fill />
+              <Image
+                src={work.thumbnail.url}
+                alt={work.title}
+                fill
+                className={styles['image']}
+              />
             </div>
-            <span>{work.title}</span>
+            <p className={styles['title']}>{work.title}</p>
           </Link>
         </li>
       ))}
