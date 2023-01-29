@@ -34,6 +34,10 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <h2 className='text-4xl mb-9'>profile</h2>
           <p className='text-base leading-8'>{profile?.detail}</p>
         </section>
+        <section className='text-center mb-24'>
+          <h2 className='text-4xl mb-9'>skills</h2>
+          <p className='text-base leading-8'>{profile?.skills}</p>
+        </section>
         <section className='mb-24'>
           <h2 className='text-4xl text-center mb-9'>works</h2>
           <WorksList works={works} />
