@@ -1,13 +1,17 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
 
+import { TextLink } from '@/components/common/textLink/textLink'
+import { WorksList } from '@/components/common/worksList/worksList'
 import { MainVisual } from '@/components/top/mainVisual/mainVisual'
-import { WorksList } from '@/components/top/worksList/worksList'
 import { client } from '@/libs/client'
 import type { Profile } from '@/types/profile'
 import type { WorksList as WorkListType } from '@/types/works'
 
 export const getStaticProps = async () => {
-  const worksList: WorkListType = await client.get({ endpoint: 'works' })
+  const worksList: WorkListType = await client.get({
+    endpoint: 'works',
+    queries: { limit: 2 },
+  })
   const profile: Profile = await client.get({ endpoint: 'profile' })
 
   return {
@@ -33,6 +37,11 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <section className='mb-24'>
           <h2 className='text-4xl text-center mb-9'>works</h2>
           <WorksList works={works} />
+          <TextLink
+            href='/works'
+            label='view more'
+            className='text-center mt-10'
+          />
         </section>
       </div>
     </main>

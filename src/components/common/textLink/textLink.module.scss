@@ -1,0 +1,11 @@
+.text-link {
+  @apply tracking-wide text-lg;
+
+  a {
+    color: var(--primary-color);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
